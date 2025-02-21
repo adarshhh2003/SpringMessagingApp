@@ -1,0 +1,28 @@
+package com.example.app.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/hello")
+public class HelloController {
+
+    @GetMapping
+    public String sayHello() {
+        return "Hello From BridgeLabz!";
+    }
+
+    @PostMapping
+    public String postHello() {
+        return "Hello From BridgeLabz! (Post Request)";
+    }
+
+    @PutMapping
+    public String putHello() {
+        return "Hello From BridgeLabz! (Put Request)";
+    }
+
+    @DeleteMapping
+    public String deleteHello() {
+        return "Hello From BridgeLabz! (Delete Request)";
+    }
+}
